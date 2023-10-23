@@ -259,6 +259,7 @@ impl Displayable for ast::Item {
             | ProxyNextUpstreamTimeout(ref val)
             | ServerTokens(ref val)
             | RealIpHeader(ref val)
+            | Charset(ref val)
             => {
                 one_arg_dir(self.directive_name(), val, f);
             }
