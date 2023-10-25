@@ -429,7 +429,7 @@ impl Item {
             LimitExcept(..) => "limit_except",
             Listen(..) => "listen",
             ProxyPass(..) => "proxy_pass",
-            Charset(..) => "charset",
+            Charset {..} => "charset",
             ProxySetHeader {..} => "proxy_set_header",
             ProxyMethod {..} => "proxy_method",
             ProxyReadTimeout {..} => "proxy_read_timeout",
